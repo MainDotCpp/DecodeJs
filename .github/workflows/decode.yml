@@ -6,16 +6,16 @@ on:
       - main
 jobs:
   decode:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu
     permissions:
       contents: write
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Execute Python script for decoding
-      run: |
-        python src/decode.py
+    # - name: Execute Python script for decoding
+    #   run: |
+    #     python src/decode.py
 
     - name: Install dependencies and run decode
       run: |
