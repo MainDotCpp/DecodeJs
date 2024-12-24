@@ -1,17 +1,10 @@
 const fs = require('fs')
-console.log('111')
 const PluginCommon = require('./plugin/common.js')
-console.log('222')
 const PluginJjencode = require('./plugin/jjencode.js')
-console.log('333')
-// const PluginSojson = require('./plugin/sojson.js')
-console.log('444')
+const PluginSojson = require('./plugin/sojson.js')
 const PluginSojsonV7 = require('./plugin/sojsonv7.js')
-console.log('555')
-// const PluginObfuscator = require('./plugin/obfuscator.js')
-console.log('666')
-// const PluginAwsc = require('./plugin/awsc.js')
-console.log('777')
+const PluginObfuscator = require('./plugin/obfuscator.js')
+const PluginAwsc = require('./plugin/awsc.js')
 
 // 读取参数
 let encodeFile = 'input.js'
@@ -45,12 +38,12 @@ let pluginUsed = '';
 
 // 循环尝试不同的插件，直到源代码与处理后的代码不一致
 const plugins = [
-  // { name: 'obfuscator', plugin: PluginObfuscator },
+  { name: 'obfuscator', plugin: PluginObfuscator },
   { name: 'sojsonv7', plugin: PluginSojsonV7 },
-  // { name: 'sojson', plugin: PluginSojson },
+  { name: 'sojson', plugin: PluginSojson },
 
-  // { name: 'awsc', plugin: PluginAwsc },
-  // { name: 'jjencode', plugin: PluginJjencode },
+  { name: 'awsc', plugin: PluginAwsc },
+  { name: 'jjencode', plugin: PluginJjencode },
     { name: 'common', plugin: PluginCommon },// 最后一次使用通用插件
 ];
 
