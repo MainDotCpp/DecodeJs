@@ -289,6 +289,7 @@ $(document)[_0x464063(0x237, 'DsJ(')](function() {
             return _0x1e3a27['EygMQ'](_0xd30603(_0x2c0ffa['pop']()[_0xa426f5(0x27d, 'rfc]')](';')[_0xa426f5(0x1e1, 'Pw&4')]()), 0x1);
     }
     ),
+    
     _0x1e3a27[_0x3f82e0(0x294, 'SEjy')](fbq, _0x1e3a27['piTIU'], 'PageView'),
     _0x1e3a27['dRkGz'](isPageScrollable) && (_0x1e3a27[_0x3f82e0(0x202, 'Pw&4')] !== _0x1e3a27['FDLdA'] ? window[_0x3f82e0(0x2a2, '$TL)')]('scroll', function() {
         var _0x3db99d = _0x3f82e0
